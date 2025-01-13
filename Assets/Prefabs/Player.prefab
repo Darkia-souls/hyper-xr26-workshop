@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1823366549391210998}
   - component: {fileID: 6934153417786458096}
   - component: {fileID: 4929849326474277462}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &1823366549391210998
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -182,3 +182,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42eea217431d82e42b9b643c9de3e346, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  offset: 0.8
