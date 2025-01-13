@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
         int asteroidsToSpawn = levelNumber + 3;
         for (int i = 0; i < asteroidsToSpawn; i++)
         {
-            Vector2 position = Random.insideUnitCircle.normalized + camera.orthographicSize;
+            Vector2 position = Random.insideUnitCircle.normalized * camera.orthographicSize;
             var asteroid = Instantiate(asteroidPrefab, position, Quaternion.identity);
 
             asteroid.Initialize(this);

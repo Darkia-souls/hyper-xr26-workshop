@@ -9,6 +9,19 @@ public class Asteroid : MonoBehaviour
         this.gameManager = gameManager;
     }
     
-    public void 
+    public void Initialize(Asteroid parent)
+    {
+        this.gameManager = parent.gameManager;
+    }
+
+    private void Start()
+    {
+        gameManager.OnAsteroidCreated();
+    }
+
+    private void OnDestroy()
+    {
+        gameManager.OnAsteroidDestroyed();
+    }
     
 }
